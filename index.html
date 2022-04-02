@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/style.css">
+    <title>PourcentCalc</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favIcon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favIcon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favIcon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favIcon/site.webmanifest">
+    <link rel="mask-icon" href="../img/favIcon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header class="header">
+        <div class="nomSite">
+            <img src="img/percentageIcon.svg" alt="">
+            <h1>PourcentCalc</h1>
+        </div>
+        <ul class="menu">
+            <li><a href="#augm_bais" class="active">Augmentation/Baisse</a></li>
+            <li><a href="#variation">Variation</a></li>
+            <li><a href="#pctEnNb">Pourcentage en nombre</a></li>
+            <li><a href="#nbEnPct">Nombre en pourcentage</a></li>
+        </ul>
+    </header>
+
+    <div class="outer-container">
+        <div class="inner-container">
+            <div class="pages-container">
+                <div id="augm_bais" class="augm-baisse page">
+                    <div class="card">
+                        <div class="augmentation">
+                            <span>Augmentation</span>
+                            <div class="inputAugmentation">
+                                <input class="augmentationNb" type="number" placeholder="Le nombre" value="">
+                                <input class="augmentationPourc" type="number" placeholder="Le % d'augmentation"
+                                    value="">
+                            </div>
+                            <button id="btnAugm">CALCULER</button>
+                            <p class="resultatAugmentation"></p>
+                        </div>
+                        <hr>
+                        <div class="baisse">
+                            <span>Baisse</span>
+                            <div class="inputBaisse">
+                                <input class="baisseNb" type="number" placeholder="Le nombre" value="">
+                                <input class="baissePourc" type="number" placeholder="Le % de baisse" value="">
+                            </div>
+                            <button id="btnBaisse">CALCULER</button>
+                            <p class="phraseResultatBaisse"></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="variation" class="variation page">
+                    <div class="card">
+                        <p class="titre">Calculez le pourcentage de variation entre une valeur1 et une valeur2</p>
+                        <div class="inputs">
+                            <input class="variationValeur1" type="number" placeholder="Valeur1" value="">
+                            <input class="variationValeur2" type="number" placeholder="Valeur2" value="">
+                        </div>
+                        <button id="btnVariation">CALCULER</button>
+                        <p class="phraseResultatVariation"></p>
+                    </div>
+                </div>
+                <div id="pctEnNb" class="pourcEnNb page">
+                    <div class="card">
+                        <p class="titre">Convertir un pourcentage d'une valeur en nombre</p>
+                        <div class="inputs">
+                            <input class="inputPourcEnNbPourcentage" type="number" placeholder="Pourcentage" value="">
+                            <input class="inputPourcEnNbValeur" type="number" placeholder="Valeur" value="">
+                        </div>
+                        <button id="btnPourcEnNb">CALCULER</button>
+                        <p class="phraseResultatPourcEnNb"></p>
+                    </div>
+                </div>
+                <div id="nbEnPct" class="nbEnPourc page">
+                    <div class="card">
+                        <p class="titre">Convertir en pourcentage une valeur1 par rapport a une valeur2</p>
+                        <div class="inputs">
+                            <input class="inputNbEnPourcValeur1" type="number" placeholder="Valeur1" value="">
+                            <input class="inputNbEnPourcValeur2" type="number" placeholder="Valeur2" value="">
+                        </div>
+                        <button id="btnNbEnPourc">CALCULER</button>
+                        <p class="phraseResultatNbEnPourc"></p>
+                    </div>
+                </div>
+            </div>
+            <script src="app.js"></script>
+</body>
+
+</html>
